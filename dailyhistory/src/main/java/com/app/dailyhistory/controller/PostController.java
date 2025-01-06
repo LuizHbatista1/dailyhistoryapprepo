@@ -1,8 +1,8 @@
 package com.app.dailyhistory.controller;
 
 import com.app.dailyhistory.DTOS.PostDTO;
-import com.app.dailyhistory.domain.Post;
-import com.app.dailyhistory.service.PostService;
+import com.app.dailyhistory.domain.post.Post;
+import com.app.dailyhistory.service.post.PostService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

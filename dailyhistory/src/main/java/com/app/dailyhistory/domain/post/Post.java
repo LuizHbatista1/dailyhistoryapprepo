@@ -1,10 +1,7 @@
-package com.app.dailyhistory.domain;
+package com.app.dailyhistory.domain.post;
 
 import com.app.dailyhistory.DTOS.PostDTO;
 import jakarta.persistence.*;
-import org.hibernate.annotations.UuidGenerator;
-
-import java.util.UUID;
 
 @Table(name = "posts")
 @Entity(name = "posts")

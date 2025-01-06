@@ -1,8 +1,7 @@
-package com.app.dailyhistory.service;
+package com.app.dailyhistory.service.post;
 
-import com.app.dailyhistory.DTOS.LikeDTO;
 import com.app.dailyhistory.DTOS.PostDTO;
-import com.app.dailyhistory.domain.Post;
+import com.app.dailyhistory.domain.post.Post;
 
 public interface PostServiceInterface {
 

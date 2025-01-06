@@ -1,10 +1,11 @@
-package com.app.dailyhistory.service;
+package com.app.dailyhistory.service.like;
 
 import com.app.dailyhistory.DTOS.LikeDTO;
-import com.app.dailyhistory.domain.Like;
-import com.app.dailyhistory.domain.Post;
+import com.app.dailyhistory.domain.like.Like;
+import com.app.dailyhistory.domain.post.Post;
 import com.app.dailyhistory.repository.LikeRepository;
 import com.app.dailyhistory.repository.PostRepository;
+import com.app.dailyhistory.service.post.PostService;
 import org.springframework.stereotype.Service;
 
 @Service

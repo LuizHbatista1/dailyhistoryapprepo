@@ -1,4 +1,4 @@
-package com.app.dailyhistory.domain;
+package com.app.dailyhistory.domain.post;
 
 public enum TagType {
 

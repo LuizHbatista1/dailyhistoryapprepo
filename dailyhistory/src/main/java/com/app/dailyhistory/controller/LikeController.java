@@ -1,11 +1,8 @@
 package com.app.dailyhistory.controller;
 
 import com.app.dailyhistory.DTOS.LikeDTO;
-import com.app.dailyhistory.DTOS.PostDTO;
-import com.app.dailyhistory.domain.Like;
-import com.app.dailyhistory.domain.Post;
 import com.app.dailyhistory.repository.PostRepository;
-import com.app.dailyhistory.service.LikeService;
+import com.app.dailyhistory.service.like.LikeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

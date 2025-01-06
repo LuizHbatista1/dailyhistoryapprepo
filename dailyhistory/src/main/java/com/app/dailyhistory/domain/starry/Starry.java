@@ -1,12 +1,12 @@
-package com.app.dailyhistory.domain;
+package com.app.dailyhistory.domain.starry;
 
-import com.app.dailyhistory.DTOS.LikeDTO;
+import com.app.dailyhistory.DTOS.StarryDTO;
+import com.app.dailyhistory.domain.post.Post;
 import jakarta.persistence.*;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@Table(name = "likes")
-@Entity(name = "likes")
-public class Like {
+@Table(name = "starry")
+@Entity(name = "starry")
+public class Starry {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,16 +15,16 @@ public class Like {
     @JoinColumn(name = "post_id")
     private Post postId;
 
-    public Like (){
+    public Starry (){
 
     }
 
-    public Like(Long id, Post postId) {
+    public Starry(Long id, Post postId) {
         this.id = id;
         this.postId = postId;
     }
 
-    public Like(LikeDTO data){
+    public Starry (StarryDTO data){
 
         this.postId = postId;
 
