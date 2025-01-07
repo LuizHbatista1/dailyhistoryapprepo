@@ -25,7 +25,7 @@ public class LikeService implements LikeServiceInterface {
     @Override
     public Like createAndSaveLike(LikeDTO likeDTO) {
 
-        Post targetPost = postService.searchPostById(likeDTO.postId());
+        Post targetPost = postService.findPostById(likeDTO.postId());
         Like newLike = new Like();
         newLike.setPostId(targetPost);
         this.likeRepository.save(newLike);
@@ -35,7 +35,7 @@ public class LikeService implements LikeServiceInterface {
     @Override
     public Integer actualizeNumberOfLikes(Long id) {
 
-        Post targetPost = postService.searchPostById(id);
+        Post targetPost = postService.findPostById(id);
         Integer getNumberLikes = targetPost.getNumberOfLikes();
         Integer currentNumberLikes = getNumberLikes + 1;
         targetPost.setNumberOfLikes(currentNumberLikes);

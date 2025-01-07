@@ -1,4 +1,4 @@
-package com.app.dailyhistory.service;
+package com.app.dailyhistory.service.starry;
 
 import com.app.dailyhistory.DTOS.StarryDTO;
 import com.app.dailyhistory.domain.post.Post;
@@ -20,7 +20,7 @@ public class StarryService implements StarryServiceInterface {
 
     @Override
     public Starry createAndSaveStarryPost(StarryDTO starryDTO) {
-        Post targetPost = postService.searchPostById(starryDTO.postId());
+        Post targetPost = postService.findPostById(starryDTO.postId());
         Starry newStarry = new Starry(starryDTO);
         newStarry.setPostId(targetPost);
         this.starryRepository.save(newStarry);

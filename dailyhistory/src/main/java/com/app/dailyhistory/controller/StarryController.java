@@ -2,7 +2,7 @@ package com.app.dailyhistory.controller;
 
 import com.app.dailyhistory.DTOS.StarryDTO;
 import com.app.dailyhistory.domain.starry.Starry;
-import com.app.dailyhistory.service.StarryService;
+import com.app.dailyhistory.service.starry.StarryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
