@@ -8,6 +8,6 @@ public interface RegisterServiceInterface {
 
     User createAndSaveUser(RegisterUserDTO registerUserDTO);
 
-    void checkPasswordEqualsAndLength(RegisterUserDTO registerUserDTO)
+    void checkPasswordEqualsAndLength(RegisterUserDTO registerUserDTO);
 
 }
