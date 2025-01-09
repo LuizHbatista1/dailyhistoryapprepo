@@ -39,7 +39,7 @@ public class RegisterService implements RegisterServiceInterface{
 
         try {
 
-            var basicRole = roleRepository.findByRole(Role.Values.BASIC.name());
+            var basicRole = roleRepository.findByName(Role.Values.BASIC.name());
             var emailFromDb = userRepository.findByEmail(registerUserDTO.email());
             if (emailFromDb.isPresent()) {
 
@@ -77,7 +77,7 @@ public class RegisterService implements RegisterServiceInterface{
         if (registerUserDTO.password().length() < 8){
 
             logger.error("password less than eight!");
-            throw new PasswordLessThanEightCharacters("password need eight ou more characters");
+            throw new PasswordLessThanEightCharacters("password needs eight ou more characters");
 
         }
     }

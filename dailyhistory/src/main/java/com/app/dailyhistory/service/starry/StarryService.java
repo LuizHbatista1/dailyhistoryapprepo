@@ -20,6 +20,8 @@ public class StarryService implements StarryServiceInterface {
 
     @Override
     public Starry createAndSaveStarryPost(StarryDTO starryDTO) {
+
+
         Post targetPost = postService.findPostById(starryDTO.postId());
         Starry newStarry = new Starry(starryDTO);
         newStarry.setPostId(targetPost);

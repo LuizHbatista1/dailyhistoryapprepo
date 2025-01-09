@@ -52,7 +52,7 @@ public class LoginService implements LoginServiceInterface {
 
             var scopes = user.get().getRoles()
                     .stream()
-                    .map(Role::getRoleName)
+                    .map(Role::getName)
                     .collect(Collectors.joining(""));
 
             var claims = JwtClaimsSet.builder()
